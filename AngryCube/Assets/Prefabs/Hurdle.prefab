@@ -196,6 +196,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8187779611158220403}
   - component: {fileID: 2324410586675447119}
+  - component: {fileID: 7839493668583111571}
   m_Layer: 0
   m_Name: Hurdle
   m_TagString: Untagged
@@ -231,3 +232,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f18d3ef4e5cf74cb8a223fe6a1ddf06c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &7839493668583111571
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8187779611158220402}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5.247901, y: 0.084150314, z: 1}
+  m_Center: {x: -0.45358515, y: 0.056359053, z: 0}
