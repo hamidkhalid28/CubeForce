@@ -22,4 +22,11 @@ public class HurdlePosition : MonoBehaviour
         child[1].transform.position = new Vector3(child[0].transform.position.x - 3, transform.position.y, transform.position.z);
     }
 
+    private void OnTriggerEnter(Collider other)
+    {
+        GameObject.Find("HurdleGenerator").GetComponent<HurdleGenerator>().spawnHurdle();
+        GetComponent<BoxCollider>().enabled = false;
+        Destroy(gameObject, 10);
+    }
+
 }

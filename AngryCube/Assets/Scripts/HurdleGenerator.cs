@@ -20,5 +20,5 @@ public class HurdleGenerator : MonoBehaviour
         Instantiate(hurdle, positionToSpawn, Quaternion.identity);
         positionToSpawn.Set(0, positionToSpawn.y + 3, 0);
     }
-
+    
 }
