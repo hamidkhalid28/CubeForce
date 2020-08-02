@@ -30,7 +30,7 @@ public class PlayerController : MonoBehaviour
     {
         if(Input.GetMouseButtonDown(0))
         {
-            if(Input.mousePosition.x < Screen.width/2)
+            if(Input.mousePosition.x <= Camera.main.WorldToScreenPoint(transform.position).x)
             {
                 rb.AddForce(new Vector3(-sideForce, upForce, 0),ForceMode.Impulse);
                 rb.AddTorque(new Vector3(0, 0, Random.Range(-torque, torque)));

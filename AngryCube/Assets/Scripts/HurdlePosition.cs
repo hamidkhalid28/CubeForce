@@ -26,7 +26,9 @@ public class HurdlePosition : MonoBehaviour
     {
         GameObject.Find("HurdleGenerator").GetComponent<HurdleGenerator>().spawnHurdle();
         GetComponent<BoxCollider>().enabled = false;
+        GameObject.FindObjectOfType<HUDController>().UpdateScore();
         Destroy(gameObject, 10);
+
     }
 
 }
